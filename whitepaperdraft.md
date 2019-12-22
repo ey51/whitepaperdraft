@@ -12,41 +12,7 @@ Notably, Kaspa diverges culturally from Bitcoin: the Bitcoin community promotes 
 
 
 This whitepaper describes the core concepts that motivate the Kaspa project, and outline the system’s technical architecture, use cases, and roadmap.
-## Table of Contents
-* 1 - [Core Concepts](#1---core-concepts)
-    * 1.1 - [The Satoshi Nakamoto Narrative](#11---the-satoshi-nakamoto-narrative)
-    * 1.2 - [Mining Decentralization](#12---mining-decentralization)
-    * 1.3 - [Scalability](#13---scalability)
-    * 1.4 - [Privacy](#14---privacy)
-    * 1.5 - [Decentralized Credit](#15---decentralized-credit)
-* 2 - [Architectural Details](#2---architectural-details)
-    * 2.1 - [Consensus Layer](#21---consensus-layer)
-        * 2.1.1 - [PHANTOM](#211---phantom)
-        * 2.1.2 - [UTXOs](#212---utxos)
-        * 2.1.3 - [Full Node Efficiency](#213---full-node-efficiency)
-        * 2.1.4 - [Privacy](#214---privacy)
-        * 2.1.5 - [OPoW](#215---opow)
-        * 2.1.6 - [Coin Issuance](216---coin-issuance)
-    * 2.2 - [Smart Contract Layer](#22---smart-contract-layer)
-        * 2.2.1 - [High-Level Description](#221---high-level-description)
-        * 2.2.2 - [Commitments](#222---commitments)
-        * 2.2.3 - [Staking](#223---staking)
-        * 2.2.4 - [Disputes](#224---disputes)
-        * 2.2.5 - [Finality](#225---finality)
-        * 2.2.6 - [Silo Outbox](#226---silo-outbox)
-        * 2.2.7 - [Pegging and Unpegging](#227---pegging-and-unpegging)
-        * 2.2.8 - [Composability](#228---composability)
-        * 2.2.9 - [Consensus Layer Reorg](#229---consensus-layer-reorg)
-        * 2.2.10 - [Syncing](#2210---syncing)
-        * 2.2.11 - [Virtual Machine](#2211---virtual-machine)
-    * 2.3 - [Rich Web of Trust Layer](#23---rich-web-of-trust-layer)
-        * 2.3.1 - [Webs of Trust](231---webs-of-trust)
-        * 2.3.2 - [Interaction with Consensus Layers](#232---interaction-with-consensus-layers)
-        * 2.3.3 - [Sybil Resistance](#233---sybil-resistance)
-* 3 - [Applications](#3---applications)
-    * 3.1 - [Stable Tokens](#31---stable-tokens)
-    * 3.2 - [Web of Trust Applications](#32---web-of-trust-applications)
-* 4 - [Conclusion](#4---conclusion)
+
 ## 1 - Core Concepts
 Kaspa is centered on several core concepts. In describing these concepts, this section also introduces the components of Kaspa.
 ### 1.1 - The Satoshi Nakamoto Narrative
