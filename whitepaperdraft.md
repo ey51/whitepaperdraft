@@ -251,7 +251,7 @@ In PHANTOM, when a miner creates a new block, instead of referencing the latest 
 
 An illustration of PHANTOM’s operation is as follows:
 
-![phantom](assets/phantom.png)  
+[phantom](assets/phantom.png)  
 
 PHANTOM takes as input a blockDAG and outputs an ordering of its blocks. It does so by identifying a cluster of well-connected (blue) blocks and ordering the DAG in a way that favors them over the other (red) blocks. The red blocks’ low connectivity in the DAG implies that, with high probability, they were produced by attacker nodes that withheld them or  deliberately referenced an outdated state of the DAG. This assumes attackers’ total hashrate is <50%.
 
@@ -349,7 +349,7 @@ A USTO token is the primary input for commitment transactions. USTO tokens shoul
 USTOs are also used for managing a lottery of commitment "tickets". For each USTO and reference block we define a lottery over the combined hash of the USTO and the reference block. The USTO wins the lottery if the resulting hash is small enough. More specifically, the lottery function is defined as the result of the following predicate:
 
 
-![lottery](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Ctext%7Bxor%7D%28%5Ctext%7Bhash%7D%28%5Ctext%7Btoken%7D%29%2C%20%5Ctext%7Bhash%7D%28%5Ctext%7Bblock%7D%29%29%7D%7B%5Ctext%7Bmaxhash%7D%7D%20%3C%20%5Cfrac%7B1%7D%7Bn%7D)
+[lottery](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Ctext%7Bxor%7D%28%5Ctext%7Bhash%7D%28%5Ctext%7Btoken%7D%29%2C%20%5Ctext%7Bhash%7D%28%5Ctext%7Bblock%7D%29%29%7D%7B%5Ctext%7Bmaxhash%7D%7D%20%3C%20%5Cfrac%7B1%7D%7Bn%7D)
 
 
 where *n* is the overall number of current USTOs for this silo. This lottery results in an expectation of a single commitment ticket for each reference block (a Binomial distribution with *n* trials and *p* = 1/*n*). Overall, the chance to win a ticket grows linearly with the number of USTOs one holds. In the long run, this results in a fair distribution of commitment fees to all managers, where each manager earns fees proportionally to the number of tokens he owns, i.e. proportional to the amount of stake he proved to have and was willing to lock as deposit.
